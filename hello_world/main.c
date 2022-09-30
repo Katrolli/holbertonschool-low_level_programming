@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -7,5 +8,8 @@
  */
 int main(void)
 {
-return (0);
+	char MyString[] = "\"Programming is like building a multilingual puzzle";
+
+	puts(MyString);
+	return (0);
 }
