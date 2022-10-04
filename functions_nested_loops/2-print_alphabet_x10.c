@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * print_alphabet - main func
+ * print_alphabet_x10 - main func
  * Return: returns 0 if sucess
  */
 void print_alphabet_x10(void)
