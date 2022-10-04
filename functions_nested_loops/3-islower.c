@@ -4,6 +4,7 @@
 /**
  * _islower - main func
  * Return: returns 0 if sucess
+ * @c: paramater for the function
  */
 int _islower(int c)
 {
