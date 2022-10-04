@@ -1,6 +1,7 @@
 #include "main.h"
-/*
- * Main is the entry point of the program
+/**
+ * main - This the entry point of the program
+ * Return: returns 0 if sucess
  */
 int main(void)
 {
