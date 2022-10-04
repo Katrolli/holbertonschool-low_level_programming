@@ -1,5 +1,7 @@
 #include "main.h"
-
+/*
+ * Main is the entry point of the program
+ */
 int main(void)
 {
 	_putchar('_');
