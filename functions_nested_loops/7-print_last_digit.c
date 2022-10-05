@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * _abs - main func
+ * print_last_digit - main func
  * Return: returns 0 if sucess
- * @n: paramater for the function
+ * @i: paramater for the function
  */
 int print_last_digit(int i)
 {
