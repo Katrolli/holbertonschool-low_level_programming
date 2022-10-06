@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * _isupper - main func
+ * _isdigit - main func
  * Return: returns - if success
  * @c: is a parameter
  */
