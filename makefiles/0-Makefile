@@ -1,0 +1,8 @@
+all: one two three
+
+one:
+	m.h
+two:
+	main.c
+three:
+	school.c
