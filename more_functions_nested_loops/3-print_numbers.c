@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * mul - main func
+ * print_numbers - main func
  * Return: returns - if success
  */
 void print_numbers(void)
