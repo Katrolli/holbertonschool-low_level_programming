@@ -1,8 +1,8 @@
-all: one two three
+all:
 
 one:
-	m.h
-two:
-	main.c
-three:
 	school.c
+two:
+	m.h
+three:
+	main.c
