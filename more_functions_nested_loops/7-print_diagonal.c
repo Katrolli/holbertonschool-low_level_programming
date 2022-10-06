@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * print_line - main func
+ * print_diagonal - main func
  * Return: returns - if success
  *@n: is a paramater
  */
