@@ -9,9 +9,9 @@
 void print_times_table(int n)
 {
 	int i, j, z;
+
 	if (n == 0)
 		_putchar('0');
-
 	else if (n <= 15 && n > 0)
 	{
 		for (i = 0; i <= n; i++)
@@ -48,5 +48,4 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');
 }
