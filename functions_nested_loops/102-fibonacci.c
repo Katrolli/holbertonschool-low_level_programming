@@ -8,7 +8,7 @@
 
 int main(void)
 {
- 	long int i = 1;
+	long int i = 1;
 	long int j = 2;
 	int x;
 
@@ -18,10 +18,13 @@ int main(void)
 		for (x = 0; x < 48; x++)
 		{
 			long int next = i + j;
+
 			i = j;
+
 			j = next;
+
 			printf("%ld", next);
-			if (x == 47 )
+			if (x == 47)
 				continue;
 			printf(", ");
 
