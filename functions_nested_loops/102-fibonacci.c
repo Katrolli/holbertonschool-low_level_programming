@@ -10,10 +10,12 @@ int main(void)
 {
  	long int i = 1;
 	long int j = 2;
+	int x;
 
 	printf("%ld, ", i);
 	printf("%ld, ", j);
-		for (int x = 0; x < 48; x++)
+
+		for (x = 0; x < 48; x++)
 		{
 			long int next = i + j;
 			i = j;
@@ -25,4 +27,5 @@ int main(void)
 
 		}
 	printf("\n");
+	return (0);
 }
