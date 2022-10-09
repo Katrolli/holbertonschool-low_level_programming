@@ -2,13 +2,14 @@
 #include <unistd.h>
 
 /**
- * print_numbers - main func
+ * print_number - main func
  * Return: returns - if success
  *@n: is a paramater
  */
 void print_number(int n)
 {
 	unsigned int m = n;
+
 	if (n < 0)
 	{
 		_putchar('-');
