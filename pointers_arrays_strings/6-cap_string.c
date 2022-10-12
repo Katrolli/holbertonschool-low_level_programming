@@ -13,7 +13,7 @@ char *cap_string(char *srt)
 		srt[i] -= 32;
 	for (i = 0; srt[i] != '\0'; i++)
 	{
-		if ((srt[i] > 0 && srt[i] < 47) || (srt[i] > 90 && srt[i] < 97))
+		if (srt[i] > 0 && srt[i] < 47 && srt[i] != '-')
 		{
 			i++;
 			if (srt[i] >= 'a' && srt[i] <= 'z')
