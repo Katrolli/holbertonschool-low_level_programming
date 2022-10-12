@@ -13,7 +13,14 @@ char *cap_string(char *srt)
 		srt[i] -= 32;
 	for (i = 0; srt[i] != '\0'; i++)
 	{
-		if (srt[i] == ' ' || srt[i] == ',' || srt[i] == ';' || srt[i] == '.' || srt[i] == '!' || srt[i] == '\n' || srt[i] == '\t' || srt[i] == '?' || srt[i] == '"' || srt[i] == '(' || srt[i] == ')' || srt[i] == '{' || srt[i] == '}')
+		if ((srt[i] > 0 && srt[i] < 65) || (srt[i] > 90 && srt[i] < 97))
+		{
+			i++;
+			if (srt[i] >= 'a' && srt[i] <= 'z')
+				srt[i] -= 32;
+			i--;
+		}
+		if (srt[i] > 122)
 		{
 			i++;
 			if (srt[i] >= 'a' && srt[i] <= 'z')
