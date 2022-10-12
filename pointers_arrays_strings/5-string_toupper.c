@@ -2,7 +2,7 @@
 /**
  * string_toupper - main func
  *
- * @src: is a parameter
+ * @str: is a parameter
  * Return: return 1
  */
 char *string_toupper(char *str)
