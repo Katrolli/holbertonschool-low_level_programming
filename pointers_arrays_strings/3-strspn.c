@@ -8,7 +8,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, temp = 0, max = 0;
+	unsigned int i, j, max = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -22,15 +22,14 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		if (found == 1)
 		{
-			temp++;
+			max++;
 		}
 		else
 		{
-			if (temp > max)
+			if (max > 0)
 			{
-				max = temp;
+				break;
 			}
-			temp = 0;
 		}
 	}
 	return (max);
