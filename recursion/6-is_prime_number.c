@@ -24,6 +24,6 @@ int prime(int n, int root)
 	if (root * root == n || n < 0)
 		return (0);
 	else if (root * root > n)
-		return (-1);
+		return (1);
 	return (prime(n, root + 1));
 }
