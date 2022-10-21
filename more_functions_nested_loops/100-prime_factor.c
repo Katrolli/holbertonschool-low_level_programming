@@ -32,7 +32,7 @@ int main(void)
 		{
 			maxPrime = num;
 		}
-
+	}
 	printf("%ld\n", maxPrime);
 	return (0);
 }
