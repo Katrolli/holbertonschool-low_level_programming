@@ -32,4 +32,14 @@ while(condition) {
    // statement of outer loop
 }
 ```
+### Function prototype
+
+A function prototype is simply the declaration of a function that specifies function's name, parameters and return type. It doesn't contain function body.
+
+A function prototype gives information to the compiler that the function may later be used in the program.
+
+``` 
+returnType 
+functionName(type1 argument1, type2 argument2, ...);
+```
 
