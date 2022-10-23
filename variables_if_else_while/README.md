@@ -40,3 +40,14 @@ The following table shows all the arithmetic operators supported by the C langua
 ++	Increment operator increases the integer value by one.	A++ = 11
 --	Decrement operator decreases the integer value by one.	A-- = 9
 ```
+#### If statements in C
+
+
+The if statement allows you to control if a program enters a section of code or not based on whether a given condition is true or false. One of the important functions of the if statement is that it allows the program to select an action based upon the user's input.
+
+The structure of an if statement is as follows: 
+
+```
+if ( statement is TRUE )
+    Execute this line of code
+```
