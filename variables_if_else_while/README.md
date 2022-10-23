@@ -59,4 +59,13 @@ if(boolean_expression) {
    /* statement(s) will execute if the boolean expression is false */
 }
 ```
+##### While statements in C
+
+A while loop in C programming repeatedly executes a target statement as long as a given condition is true.
+
+```
+while(condition) {
+   statement(s);
+}
+```
 
