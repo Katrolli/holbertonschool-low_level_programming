@@ -51,3 +51,12 @@ The structure of an if statement is as follows:
 if ( statement is TRUE )
     Execute this line of code
 ```
+An if statement can be followed by an optional else statement, which executes when the Boolean expression is false.
+```
+if(boolean_expression) {
+   /* statement(s) will execute if the boolean expression is true */
+} else {
+   /* statement(s) will execute if the boolean expression is false */
+}
+```
+
