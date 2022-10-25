@@ -62,8 +62,6 @@ unsigned int str_len(char *str)
 {
 	unsigned int len = 0;
 
-	if (str == NULL)
-		str = "";
 	while (str[len] != '\0')
 		len++;
 	return (len);
