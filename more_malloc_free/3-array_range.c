@@ -8,7 +8,7 @@
  * @max: max size of elements of array
  * Return: return the pointer
  */
-int *array_range(int min,int max)
+int *array_range(int min, int max)
 {
 	int *ptr;
 	int len;
