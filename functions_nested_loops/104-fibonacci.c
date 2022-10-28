@@ -29,7 +29,7 @@ int main(void)
 	rightn1 = (n1 % billion);
 	leftn2 = (n2 / billion);
 	rightn2 = (n2 % billion);
-	for (i = 0; i < 5; i++)
+	for (i = 0; i <= 5; i++)
 	{
 		lefttmp = leftn1 + leftn2;
 		righttmp = rightn1 + rightn2;
