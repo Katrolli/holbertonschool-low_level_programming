@@ -23,7 +23,7 @@ int main(void)
 		tmp = n1 + n2;
 		n1 = n2;
 		n2 = tmp;
-		printf("%lu", tmp);
+		printf("%lu, ", tmp);
 	}
 	leftn1 = (n1 / billion);
 	rightn1 = (n1 % billion);
@@ -37,9 +37,11 @@ int main(void)
 		rightn1 = rightn2;
 		leftn2 = lefttmp;
 		rightn2 = righttmp;
-		printf(", %lu", lefttmp + (righttmp / billion));
+		printf("%lu", lefttmp + (righttmp / billion));
 		printf("%lu", righttmp % billion);
-	}
+		if (i != 5)
+			printf(", ");
+	}	
 	printf("\n");
 	return (0);
 }
