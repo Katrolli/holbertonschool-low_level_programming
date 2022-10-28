@@ -41,7 +41,7 @@ int main(void)
 		printf("%lu", righttmp % billion);
 		if (i != 5)
 			printf(", ");
-	}	
+	}
 	printf("\n");
 	return (0);
 }
