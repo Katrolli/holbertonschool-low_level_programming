@@ -3,13 +3,10 @@
 /**
  * print_dog - Defining a dog struct
  * @d: First member
- * @name: name variable
- * @age: Second member
- * @owner: Third member
  */
 void print_dog(struct dog *d)
 {
-	if(d)
+	if (d)
 	{
 		if ((*d).name == NULL && (*d).owner == NULL)
 		{
