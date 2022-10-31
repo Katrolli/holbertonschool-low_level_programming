@@ -5,7 +5,8 @@
  * new_dog - Defining a dog struct
  * @name: First member
  * @age: second member
- * owner: third member
+ * @owner: third member
+ * Return: returns the new pointer
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -19,7 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; owner[i] != '\0'; i++)
 	{
 	}
-	len2= i;
+	len2 = i;
 	new_d = malloc(sizeof(dog_t));
 	if (new_d == NULL)
 		return (NULL);
@@ -36,7 +37,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_d);
 		return (NULL);
 	}
-		for ( i = 0; name[i] != '\0'; i++)
+		for (i = 0; name[i] != '\0'; i++)
 		{
 			new_d->name[i] = name[i];
 		}
