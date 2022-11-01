@@ -21,7 +21,7 @@ int (*get_op_func(__attribute__((unused))char *s))(int, int)
 
 	while (i < 6)
 	{
-		if (*ops[i].op == *s)
+		if (ops[i].op == s)
 		{
 			return (ops[i].f);
 		}
