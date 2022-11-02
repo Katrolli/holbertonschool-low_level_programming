@@ -40,5 +40,6 @@ void p_string(char *s)
 {
 	if (s == NULL)
 	printf("(nill)");
+	else
 	printf("%s", s);
 }
