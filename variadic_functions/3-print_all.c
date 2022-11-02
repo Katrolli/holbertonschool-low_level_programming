@@ -8,6 +8,7 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0')
 	{
 		char chr = format[i];
+		int isvalid = chr == 'c' || chr == 's' || chr == 'i' || chr == 'f';
 
 		switch (chr)
 		{
@@ -27,8 +28,6 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		i++;
-		bool isvalid = chr == 'c' || chr == 's' || chr == 'i' || chr == 'f';
-
 		if (format[i] != '\0' && isvalid)
 			printf(", ");
 	}
