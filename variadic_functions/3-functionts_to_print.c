@@ -39,7 +39,7 @@ void p_float(double f)
 void p_string(char *s)
 {
 	if (s == NULL)
-	printf("(nill)");
+	printf("(nil)");
 	else
 	printf("%s", s);
 }
