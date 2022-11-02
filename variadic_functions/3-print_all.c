@@ -5,7 +5,7 @@ void print_all(const char * const format, ...)
 	va_list va;
 
 	va_start(va, format);
-	while (format[i] != '\0')
+	while (format != NULL && format[i] != '\0')
 	{
 		char chr = format[i];
 		int isvalid = chr == 'c' || chr == 's' || chr == 'i' || chr == 'f';
