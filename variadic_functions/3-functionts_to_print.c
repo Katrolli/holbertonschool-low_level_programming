@@ -38,7 +38,7 @@ void p_float(double f)
 
 void p_string(char *s)
 {
-	if (s == NULL);
+	if (s == NULL)
 	printf("(nill)");
 	printf("%s", s);
 }
