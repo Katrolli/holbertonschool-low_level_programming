@@ -7,7 +7,7 @@
  * @s: input op
  * Return: right function
  */
-int (*get_op_func(__attribute__((unused))char *s))(int, int)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -19,9 +19,9 @@ int (*get_op_func(__attribute__((unused))char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 6)
+	while (ops[i].op != NULL)
 	{
-		if (ops[i].op == s)
+		if (*ops[i].op == *s)
 		{
 			return (ops[i].f);
 		}
