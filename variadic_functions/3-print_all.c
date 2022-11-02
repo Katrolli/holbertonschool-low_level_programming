@@ -1,3 +1,8 @@
+/**
+ * print_all - main func
+ * @format: type parameter
+ */
+
 #include "3-functionts_to_print.h"
 void print_all(const char * const format, ...)
 {
