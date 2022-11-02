@@ -1,34 +1,36 @@
 #include "3-functionts_to_print.h"
 void print_all(const char * const format, ...)
 {
-	 int i = 0;
+	int i = 0;
+	va_list va;
 
-	 va_list va;
+	va_start(va, format);
+	while (format[i] != '\0')
+	{
+		char chr = format[i];
 
-	 va_start(va, format);
-	 while (format[i] != '\0')
-	 {
-		 char chr = format[i];
-		 switch (chr)
-		 {
-			 case 'c':
-				 p_char(va_arg(va, int));
-				 break;
+		switch (chr)
+		{
+			case 'c':
+				p_char(va_arg(va, int));
+				break;
 			case 's':
-				 p_string(va_arg(va, char*));
-				 break;
+				p_string(va_arg(va, char*));
+				break;
 			case 'i':
-				 p_integer(va_arg(va, int));
-				 break;
+				p_integer(va_arg(va, int));
+				break;
 			case 'f':
-				 p_float(va_arg(va, double));
-				 break;
+				p_float(va_arg(va, double));
+				break;
 			default:
-				 break;
-		 }
-		 i++;
-		 if (format[i] != '\0' && (chr == 'c' || chr == 's' || chr == 'i' || chr == 'f'))
-			 printf(", ");
-	 }
-	 printf("\n");
+				break;
+		}
+		i++;
+		bool isvalid = chr == 'c' || chr == 's' || chr == 'i' || chr == 'f';
+
+		if (format[i] != '\0' && isvalid)
+			printf(", ");
+	}
+	printf("\n");
 }
