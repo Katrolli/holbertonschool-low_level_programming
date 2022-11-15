@@ -1,9 +1,7 @@
 #include "lists.h"
 /**
- * add_node_end - main func
+ * free_list - main func
  * @head: pointer to list
- * @str: old string to be copied
- * Return: add of new list
  */
 void free_list(list_t *head)
 {
