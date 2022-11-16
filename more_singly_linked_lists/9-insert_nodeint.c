@@ -20,11 +20,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		tmp->next = h;
 		*head = tmp;
-		return(tmp);
+		return (tmp);
 	}
 	while (count != idx - 1)
 	{
-		if (h == NULL || h->next == NULL )
+		if (h == NULL || h->next == NULL)
 		{
 			return (NULL);
 		}
