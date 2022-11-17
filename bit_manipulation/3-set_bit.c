@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * get_bit - main function
+ * set_bit - main function
  * @n: string of binary
  * @index: position of bit
  * Return: returns the convertet nr
