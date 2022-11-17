@@ -8,43 +8,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int icurrent, jcurrent;
-	unsigned int diff = 0, bit = 1;
-	int i = 0, j = 0;
+	unsigned long int count_bits = 0;
+	unsigned long int result_xor = n ^ m;
 
-	while (n)
+	while (result_xor)
 	{
-		if (n > bit)
-			i++;
-		bit *= 2;
-		if (n < bit)
-			break;
+		count_bits += (result_xor & 1);
+		result_xor >>= 1;
 	}
-	bit = 1;
-	while (m)
-	{
-		if (m > bit)
-			j++;
-		bit *= 2;
-		if (m < bit)
-			break;
-	}
-	if (i != 0)
-		i--;
-	if (j != 0)
-		j--;
-	if (n > 1 && n < 9)
-		i++;
-	if (m > 1 && m < 9)
-		j++;
-	while (i >= 0 || j >= 0)
-	{
-		icurrent = n >> i;
-		jcurrent = m >> i;
-		if ((icurrent ^ jcurrent) & 1)
-			diff++;
-		i--;
-		j--;
-	}
-	return (diff);
+	return (count_bits);
 }
