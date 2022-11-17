@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_binaryt - main function
+ * print_binary - main function
  * @n: string of binary
  * Return: returns the convertet nr
  */
