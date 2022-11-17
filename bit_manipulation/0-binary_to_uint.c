@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * binary_to_uint - main function
  * @b: string of binary
