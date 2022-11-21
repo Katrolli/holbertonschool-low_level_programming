@@ -6,7 +6,7 @@ int main (int argc, char *argv[])
 	int file_from, cl1, cl2, file_to,file_read,file_write;
 	char *buff[1024];
 	int tmp_file_from = open(argv[1], O_RDWR);
-	size_t filie_from_size = (size_t)lseek(tmp_file_from,0,SEEK_END);
+	size_t file_from_size = (size_t)lseek(tmp_file_from,0,SEEK_END);
 	close(tmp_file_from);
 
 	if (argc != 3)
