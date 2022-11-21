@@ -14,7 +14,7 @@ int main (int argc, char *argv[])
 		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	if (argv[1] == NULL)
+	if (tmp_file_from == -1)
 	{
 		printf("Error: Can't read from file %s\n", argv[1]);
 		printf("98\n");
