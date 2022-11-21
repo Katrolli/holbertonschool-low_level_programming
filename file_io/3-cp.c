@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include <unistd.h>
 #include "main.h"
 int main (int argc, char *argv[])
@@ -7,7 +6,7 @@ int main (int argc, char *argv[])
 	int file_from, cl1, cl2, file_to,file_read,file_write;
 	char *buff[1024];
 	int tmp_file_from = open(argv[1], O_RDWR);
-	size_t file_from_size = (size_t)lseek(tmp_file_from,0,SEEK_END);
+	size_t filie_from_size = (size_t)lseek(tmp_file_from,0,SEEK_END);
 	close(tmp_file_from);
 
 	if (argc != 3)
@@ -15,7 +14,7 @@ int main (int argc, char *argv[])
 		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	file_from = open(argv[1], O_RDONLY);
+	file_from = open(argv[1], O_RDWR);
 	if (file_from == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
