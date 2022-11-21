@@ -36,7 +36,7 @@ int main (int argc, char *argv[])
 		file_write = write(file_to, buff, file_from_size);
 		if (file_write == -1)
 		{
-			 dprintf(2, "Error: Can't write  file %s\n", argv[2]);
+			 dprintf(2, "Error: Can't write to file %s\n", argv[2]);
 			 exit(99);
 		}
 	}
