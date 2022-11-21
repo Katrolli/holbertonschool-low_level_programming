@@ -5,7 +5,7 @@ int main (int argc, char *argv[])
 {
 	int file_from, cl1, cl2, file_to,file_read,file_write;
 	char *buff[1024];
-	int tmp_file_from = open(argv[1], O_RDWR);
+	int tmp_file_from = open(argv[1], O_RDONLY);
 	size_t file_from_size = (size_t)lseek(tmp_file_from,0,SEEK_END);
 	close(tmp_file_from);
 
@@ -14,8 +14,8 @@ int main (int argc, char *argv[])
 		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	file_from = open(argv[1], O_RDWR);
-	if (file_from == -1)
+	file_from = open(argv[1], O_RDONLY);
+	if (file_from == -1 || tmp_file_from == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
