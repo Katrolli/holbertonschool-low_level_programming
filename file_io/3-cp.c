@@ -16,7 +16,7 @@ int main (int argc, char *argv[])
 	}
 	if (argv[1] == NULL)
 	{
-		printf("Error: Can't read from file %s\n", argv[1]);
+		fprintf(stdout,"Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	file_from = open(argv[1], O_RDONLY);
