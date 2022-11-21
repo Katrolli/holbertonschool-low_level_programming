@@ -23,7 +23,7 @@ int main (int argc, char *argv[])
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (file_to == -1)
         {
-                dprintf(2, "Error: Can't write  file %s\n", argv[2]);
+                dprintf(2, "Error: Can't write to file %s\n", argv[2]);
                 exit(99);
         }
 	while ((file_read = read(file_from,buff,file_from_size)) > 0)
