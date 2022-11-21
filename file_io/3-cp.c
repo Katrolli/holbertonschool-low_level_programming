@@ -33,11 +33,6 @@ int main (int argc, char *argv[])
         }
 	while ((file_read = read(file_from,buff,file_from_size)) > 0)
 	{
-		if (file_read == -1)
-		{
-			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
-			 exit(98);
-		}
 		file_write = write(file_to, buff, file_from_size);
 		if (file_write == -1)
 		{
