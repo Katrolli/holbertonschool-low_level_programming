@@ -23,6 +23,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		new->next = *h;
 		*h = new;
+		printf("Fillim\n");
 		return (*h);
 	}
 	while (i < idx - 1)
@@ -36,11 +37,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		tmp->next = new;
 		new->prev = tmp;
+		printf("fund\n");
 		return (tmp);
 	}
 	new->next = tmp->next;
 	tmp->next->prev = new;
 	tmp->next = new;
 	new->prev = tmp;
+	printf("ne mes\n");
 	return (tmp);
 }
