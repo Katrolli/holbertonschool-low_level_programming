@@ -20,7 +20,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		tmp->next = NULL;
 		tmp->prev = NULL;
 		free(tmp);
-		printf("at index 0\n");
 		return (1);
 	}
 	else
@@ -35,7 +34,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		tmp->next = tmp->next->next;
 		del->next = NULL;
 		free(del);
-		printf("at index\n");
 		return(1);
 	}
 	return (-1);
