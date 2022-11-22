@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_dlistint - function to count elements of list
+ * get_dnodeint_at_index - function to count elements of list
  * @head: header of list
  * @index: position of node to display
  * Return: the node of index
