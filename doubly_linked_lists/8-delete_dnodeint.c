@@ -2,8 +2,8 @@
 
 /**
  * delete_dnodeint_at_index - function to count elements of list
- * @h: header of list
- * @idx: index to add node
+ * @head: header of list
+ * @index: index to add node
  * Return: the new added node
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -42,5 +42,5 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		del->prev = NULL;
 	}
 	free(del);
-	return(1);
+	return (1);
 }
