@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 /**
- * key_index - implementation of the djb2 algorithm
+ * hash_table_set - set a new node with key/value pairs
  * @key: string used to get key
- * @size: size of array
- * Return: index of key/value
+ * @value: value assosiated with key
+ * Return: return 1 if success
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -20,13 +20,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(current->value);
 			current->value = strdup(value);
-			return 1;
+			return (1);
 		}
 		current = current->next;
 	}
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
-		return 0;
+		return (0);
 	new->key = strdup(key);
 	new->value = strdup(value);
 	new->next = ht->array[idx];
