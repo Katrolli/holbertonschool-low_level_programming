@@ -2,6 +2,7 @@
 /**
  * hash_table_set - set a new node with key/value pairs
  * @key: string used to get key
+ * @ht: the hash table
  * @value: value assosiated with key
  * Return: return 1 if success
  */
